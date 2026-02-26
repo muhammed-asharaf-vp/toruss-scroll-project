@@ -10,7 +10,9 @@ export default function CameraRig({
   const { camera } = useThree()
 
   useFrame(() => {
-    camera.position.z = 8 - progress * 4
+    camera.position.z = 9 - progress * 2
+    camera.position.y = progress * 1
+    camera.lookAt(0, 0, 0)
   })
 
   return null

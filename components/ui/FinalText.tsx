@@ -1,38 +1,4 @@
-// "use client"
 
-// import { useEffect, useRef } from "react"
-
-// interface FinalTextProps {
-//   progress: number
-// }
-
-// export default function FinalText({ progress }: FinalTextProps) {
-//   const ref = useRef<HTMLDivElement>(null)
-
-//   useEffect(() => {
-//     if (!ref.current) return
-
-//     if (progress > 0.85) {
-//       ref.current.style.opacity = "1"
-//       ref.current.style.transform = "translateY(0px)"
-//     } else {
-//       ref.current.style.opacity = "0"
-//       ref.current.style.transform = "translateY(40px)"
-//     }
-//   }, [progress])
-
-//   return (
-//     <div
-//       ref={ref}
-//       className="cyber-text"
-//       style={{
-//         zIndex: 9999,
-//       }}
-//     >
-//       INNOVATION
-//     </div>
-//   )
-// }
 
 "use client"
 

@@ -1,24 +1,4 @@
-// "use client"
 
-// import { useEffect, useState } from "react"
-
-// export default function useScrollProgress() {
-//   const [progress, setProgress] = useState(0)
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const scrollTop = window.scrollY
-//       const maxScroll =
-//         document.body.scrollHeight - window.innerHeight
-//       setProgress(scrollTop / maxScroll)
-//     }
-
-//     window.addEventListener("scroll", handleScroll)
-//     return () => window.removeEventListener("scroll", handleScroll)
-//   }, [])
-
-//   return progress
-// }
 
 "use client"
 
@@ -28,7 +8,7 @@ export default function useScrollProgress() {
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {
-    const handleScroll = () => {
+    const update = () => {
       const scrollTop = window.scrollY
       const maxScroll =
         document.documentElement.scrollHeight -
@@ -36,17 +16,16 @@ export default function useScrollProgress() {
 
       if (maxScroll <= 0) return
 
-      const value = scrollTop / maxScroll
-      setProgress(Math.min(value, 1))
+      setProgress(Math.min(scrollTop / maxScroll, 1))
     }
 
-    handleScroll()
-    window.addEventListener("scroll", handleScroll)
-    window.addEventListener("resize", handleScroll)
+    update()
+    window.addEventListener("scroll", update)
+    window.addEventListener("resize", update)
 
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-      window.removeEventListener("resize", handleScroll)
+      window.removeEventListener("scroll", update)
+      window.removeEventListener("resize", update)
     }
   }, [])
 
