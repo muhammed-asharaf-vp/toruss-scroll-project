@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+LATTICE — Scroll-Driven 3D Experience
 
-## Getting Started
+An immersive scroll-driven 3D web experience built with Next.js, React Three Fiber, GSAP, and Lenis.
 
-First, run the development server:
+As the user scrolls, a 3D object transforms dynamically — rotating, shifting, and evolving to reflect the concept of structured data becoming emergent intelligence.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+✨ Concept
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+LATTICE represents structured information forming intelligence.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A crystal-like 3D structure reacts to scroll.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The object rotates and morphs as the page progresses.
 
-## Learn More
+Sections fade, animate, and transition using GSAP.
 
-To learn more about Next.js, take a look at the following resources:
+Smooth scrolling enhances the premium experience.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The goal was to create a visually refined, interactive narrative that connects scroll motion with 3D transformation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🛠 Tech Stack
 
-## Deploy on Vercel
+Next.js (App Router)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+React Three Fiber (R3F)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Three.js
+
+GSAP
+
+Lenis (Smooth Scroll)
+
+TypeScript
+
+Tailwind CSS
+
+🚀 Features
+
+Custom smooth scrolling (Lenis)
+
+Scroll-based 3D transformations
+
+GSAP-powered UI animations
+
+Fully responsive layout
+
+Dark cyberpunk aesthetic (cyan / violet palette)
+
+🧠 How It Works
+
+Lenis replaces default browser scroll for smooth motion.
+
+Scroll progress is tracked using a custom hook.
+
+The 3D object reacts to scroll using useFrame in R3F.
+
+GSAP animates DOM elements for layered visual depth.
+
+The scroll position acts as the “timeline” for the experience.
+
+🌍 Live Demo
+
+Live URL:
+👉 https://toruss-scroll-project.vercel.app
+
+⚙️ Deployment
+
+Deployed using Vercel.
+
+To deploy:
+
+vercel
+
+Or connect the GitHub repo directly to Vercel.
+
+🎯 Assignment Context
+
+This project was built as part of a creative scroll-driven build challenge. The goal was to:
+
+Build a single scroll-driven page
+
+Connect scroll to a 3D object
+
+Include smooth scrolling
+
+Add at least one GSAP animation
+
+Host it live
+
+📌 Future Improvements
+
+Shader-based crystal material
+
+Post-processing bloom/glow
+
+Scroll-triggered section transitions
+
+Performance optimization for low-end devices
+
+👤 Author
+
+Asharaf
+Frontend Developer
