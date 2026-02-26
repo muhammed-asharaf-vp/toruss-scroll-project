@@ -1,6 +1,6 @@
 "use client"
 
-import useScrollProgress from "@/components/scroll/useScrollProgress"
+
 import CoreBlocks from "./CoreBlocks"
 import Lights from "./Lights"
 import CameraRig from "./CameraRig"

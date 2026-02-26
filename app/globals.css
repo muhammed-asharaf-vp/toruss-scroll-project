@@ -41,20 +41,20 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 7vw;
-  font-weight: 800;
-  letter-spacing: 6px;
-  color: #ffffff;
+  font-size: 6vw;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  color:  #00ffff;
   text-transform: uppercase;
   opacity: 0;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Inter', sans-serif;
   pointer-events: none;
-  text-shadow:
-    2px 2px 0px #00ffff,
-    -2px -2px 0px #0066ff,
-    0 0 20px rgba(0, 255, 255, 0.6);
+text-shadow:
+  2px 2px 0px #ff00ff,
+  -2px -2px 0px #0033ff,
+  0 0 20px rgba(0, 255, 255, 0.8),
+  0 0 40px rgba(255, 0, 255, 0.6);
 }
-
 .loader-screen {
   position: fixed;
   inset: 0;

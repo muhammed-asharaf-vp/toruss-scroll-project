@@ -2,7 +2,7 @@
 
 import { Canvas } from "@react-three/fiber"
 import CoreScene from "./CoreScene"
-import { Color, Fog } from "three"
+
 
 interface SceneCanvasProps {
   progress: number

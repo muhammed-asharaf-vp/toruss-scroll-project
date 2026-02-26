@@ -2,7 +2,7 @@ import "./globals.css"
 import ScrollProvider from "@/components/scroll/ScrollProvider"
 
 export const metadata = {
-  title: "Innovation Core",
+  title: "Name Card",
   description: "Cinematic Scroll Experience",
 }
 
