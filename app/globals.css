@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+.canvas-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+.scroll-container {
+  height: 400vh;
+  position: relative;
+  z-index: 2;
+}
+
+.final-text {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 6vw;
+  font-weight: 700;
+  letter-spacing: 4px;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0;
+}
+
+.cyber-text {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7vw;
+  font-weight: 800;
+  letter-spacing: 6px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 0;
+  font-family: 'Orbitron', sans-serif;
+  pointer-events: none;
+  text-shadow:
+    2px 2px 0px #00ffff,
+    -2px -2px 0px #0066ff,
+    0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+.loader-screen {
+  position: fixed;
+  inset: 0;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.loader-text {
+  color: #ffe600;
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+  opacity: 0;
+  transform: translateY(40px);
+}
